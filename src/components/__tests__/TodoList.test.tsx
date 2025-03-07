@@ -1,9 +1,9 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
-import TodoList from '../TodoList';
+import TodoList from '../todoList';
 import { Provider } from 'react-redux';
 import { store } from '../../app/store';
 import { addTodo } from '../../features/todoSlice';
+import '@testing-library/jest-dom';
 
 test('displays todos correctly', () => {
   store.dispatch(

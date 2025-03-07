@@ -1,8 +1,8 @@
-import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import TodoForm from '../TodoForm';
+import TodoForm from '../todoForm';
 import { Provider } from 'react-redux';
 import { store } from '../../app/store';
+import '@testing-library/jest-dom';
 
 test('allows the user to add a todo', () => {
   render(
